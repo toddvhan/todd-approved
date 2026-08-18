@@ -486,6 +486,7 @@ export const catalog: CatalogItem[] = [
     imageAlt: "LMNT zero-sugar electrolyte drink mix",
     href: amazonDp("B09Q9WCDY7"),
     retailer: "Amazon",
+    featured: true,
   },
   supplement({
     slug: "bcaas",
@@ -951,6 +952,7 @@ export const catalog: CatalogItem[] = [
     href: "https://studio.com/todd",
     retailer: "Studio",
     owned: true,
+    featured: true,
   },
   {
     slug: "one-percent-dating",
