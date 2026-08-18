@@ -23,7 +23,7 @@ Every product lives in one file: `src/lib/catalog.ts`.
 1. Swap names, photos, blurbs, and links for what you actually wear and recommend.
 2. For Amazon links, use the product URL (`https://www.amazon.com/dp/ASIN`). The Associates tag is applied automatically.
 3. Put your tag in `src/lib/site.ts` → `amazonTag`.
-4. Set `contactEmail` in the same file (watch inquiries use it).
+4. Watch and other inquiries go through `/inquire`. Delivery email stays in Vercel env (`INQUIRY_EMAIL`), not on the page. Add `RESEND_API_KEY` so the form can send.
 5. For a watch listed on Chrono24 or eBay, add `marketplaceUrl` and `marketplaceName`.
 6. Studio (`studio.com/todd`) and 1% Dating (`onepercent.dating`) are first-party — his apps, not third-party affiliates. Digital Black Belt merged into 1%.
 

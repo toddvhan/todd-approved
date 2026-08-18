@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getItem, watches } from "@/lib/catalog";
-import { site, watchInquiryMailto } from "@/lib/site";
+import { site, watchInquiryHref } from "@/lib/site";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -85,8 +85,8 @@ export default async function WatchPage({ params }: Props) {
               Sold
             </p>
           ) : (
-            <a
-              href={watchInquiryMailto(`${item.maker} ${item.name}`)}
+            <Link
+              href={watchInquiryHref(`${item.maker} ${item.name}`)}
               className="border border-gold bg-gold px-5 py-3 text-center text-[12px] tracking-[0.22em] text-ink uppercase transition-colors hover:bg-transparent hover:text-gold"
             >
               {hold
@@ -94,7 +94,7 @@ export default async function WatchPage({ params }: Props) {
                 : listed
                   ? "Available for purchase"
                   : "Open to inquiries"}
-            </a>
+            </Link>
           )}
           {item.marketplaceUrl && (
             <a

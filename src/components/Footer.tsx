@@ -46,12 +46,9 @@ export function Footer() {
           >
             Instagram
           </a>
-          <a
-            href={`mailto:${site.contactEmail}`}
-            className="hover:text-gold normal-case tracking-normal"
-          >
-            {site.contactEmail}
-          </a>
+          <Link href="/inquire" className="hover:text-gold">
+            Inquiries
+          </Link>
         </div>
       </div>
     </footer>

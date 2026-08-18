@@ -12,8 +12,6 @@ export const site = {
   redirectDomain: "toddvapproved.com",
   // Amazon Associates tracking ID (Associates Central).
   amazonTag: "toddvdating-20",
-  // Used for watch inquiries only. This site does not take payment.
-  contactEmail: "inquiries@toddapproved.com",
   instagram: "https://www.instagram.com/toddvdating",
   youtube: "https://www.youtube.com/@ToddVDating",
   // Paste the LMNT creator landing page (drinklmnt.com/your-name) here.
@@ -83,8 +81,7 @@ export function withAffiliate(url: string) {
   }
 }
 
-export function watchInquiryMailto(watchName: string) {
-  const subject = `Watch inquiry: ${watchName}`;
-  const body = `Hi Todd V,\n\nI'm interested in the ${watchName}.\n\n`;
-  return `mailto:${site.contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+export function watchInquiryHref(watchName?: string) {
+  if (!watchName) return "/inquire";
+  return `/inquire?watch=${encodeURIComponent(watchName)}`;
 }
