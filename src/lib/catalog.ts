@@ -715,6 +715,15 @@ export const catalog: CatalogItem[] = [
     note: "Ace uncut edition, ISBN 0441788386. Not the 1961 cut text. Associates on the Amazon URL.",
   }),
   book({
+    slug: "catch-me-if-you-can",
+    name: "Catch Me If You Can",
+    maker: "Frank W. Abagnale",
+    blurb:
+      "The real con, not just the movie. Fake checks, fake uniforms, and getting away with it until he didn't.",
+    isbn: "0767905385",
+    note: "Broadway paperback, ISBN 0767905385. Frank Abagnale with Stan Redding. Associates on the Amazon URL.",
+  }),
+  book({
     slug: "the-hustler",
     name: "The Hustler",
     maker: "Walter Tevis",
