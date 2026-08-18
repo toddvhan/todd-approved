@@ -272,7 +272,7 @@ export const catalog: CatalogItem[] = [
     maker: "Flux Footwear",
     category: "clothes",
     blurb:
-      "The Flux pair. Grey and white — the closest thing still on the site to the grey I actually wear.",
+      "The Flux pair. Grey and white — the closest thing still on the site to the grey I actually wear. Casual, not game-specific.",
     note: "Grey/White KT confirmed. Amazon search — size-specific listings come and go. Associates on the Amazon URL.",
     image: "/products/flux-adapt-knit-trainer-grey-white.jpg",
     imageAlt: "Flux Adapt Knit Trainer in grey and white",
