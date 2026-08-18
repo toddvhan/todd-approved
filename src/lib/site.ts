@@ -13,7 +13,8 @@ export const site = {
   // Amazon Associates tracking ID (Associates Central).
   amazonTag: "toddvdating-20",
   instagram: "https://www.instagram.com/toddvdating",
-  youtube: "https://www.youtube.com/@ToddVDating",
+  youtubeDating: "https://www.youtube.com/@ToddVDating",
+  youtubeGeneral: "https://www.youtube.com/@churchofreason2199",
   // Paste the LMNT creator landing page (drinklmnt.com/your-name) here.
   // Salty Status is a customer referral (free box), not a commission program.
   lmntReferralUrl: "",
@@ -79,9 +80,4 @@ export function withAffiliate(url: string) {
   } catch {
     return url;
   }
-}
-
-export function watchInquiryHref(watchName?: string) {
-  if (!watchName) return "/inquire";
-  return `/inquire?watch=${encodeURIComponent(watchName)}`;
 }

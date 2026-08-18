@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { InquiryForm } from "@/components/InquiryForm";
 import { getItem, watches } from "@/lib/catalog";
-import { site, watchInquiryHref } from "@/lib/site";
+import { site } from "@/lib/site";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -79,23 +80,7 @@ export default async function WatchPage({ params }: Props) {
           </dl>
         )}
 
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          {sold ? (
-            <p className="border border-line px-5 py-3 text-center text-[12px] tracking-[0.22em] text-sold uppercase">
-              Sold
-            </p>
-          ) : (
-            <Link
-              href={watchInquiryHref(`${item.maker} ${item.name}`)}
-              className="border border-gold bg-gold px-5 py-3 text-center text-[12px] tracking-[0.22em] text-ink uppercase transition-colors hover:bg-transparent hover:text-gold"
-            >
-              {hold
-                ? "Inquire anyway"
-                : listed
-                  ? "Available for purchase"
-                  : "Open to inquiries"}
-            </Link>
-          )}
+        <div className="mt-8 flex flex-col gap-3">
           {item.marketplaceUrl && (
             <a
               href={item.marketplaceUrl}
@@ -105,6 +90,28 @@ export default async function WatchPage({ params }: Props) {
             >
               View on {item.marketplaceName ?? "marketplace"}
             </a>
+          )}
+          {sold ? (
+            <p className="border border-line px-5 py-3 text-center text-[12px] tracking-[0.22em] text-sold uppercase">
+              Sold
+            </p>
+          ) : (
+            <div className="mt-4 border border-line bg-panel px-5 py-6">
+              <p className="text-[11px] tracking-[0.28em] text-gold uppercase">
+                Product inquiry
+              </p>
+              <p className="mt-2 mb-6 text-sm leading-6 text-ivory-dim">
+                {hold
+                  ? "This one is on hold. Inquire anyway if you want it."
+                  : listed
+                    ? "Available. Tell me who you are and I will get back to you."
+                    : "Open to inquiries. No payment on this site."}
+              </p>
+              <InquiryForm
+                watch={`${item.maker} ${item.name}`}
+                compact
+              />
+            </div>
           )}
         </div>
         <p className="mt-6 text-xs leading-5 text-mute">

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { InquiryForm } from "./InquiryForm";
+import { InquiryForm } from "@/components/InquiryForm";
 
 export const metadata: Metadata = {
-  title: "Inquire",
+  title: "Product inquiries",
 };
 
 type Props = {
@@ -19,7 +19,7 @@ export default async function InquirePage({ searchParams }: Props) {
         Contact
       </p>
       <h1 className="mt-3 font-serif text-5xl text-ivory">
-        {piece ? "Watch inquiry" : "Inquire"}
+        {piece ? "Watch inquiry" : "Product inquiries"}
       </h1>
       <p className="mt-5 text-base leading-7 text-ivory-dim">
         Watches and anything else on this list. No payment on this site. If we

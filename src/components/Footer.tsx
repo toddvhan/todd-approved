@@ -27,16 +27,21 @@ export function Footer() {
           </p>
         </div>
         <div className="flex flex-col gap-3 text-sm tracking-[0.12em] text-ivory-dim uppercase">
-          <Link href="/disclosure" className="hover:text-gold">
-            Affiliate disclosure
-          </Link>
           <a
-            href={site.youtube}
+            href={site.youtubeDating}
             className="hover:text-gold"
             target="_blank"
             rel="noreferrer"
           >
-            YouTube
+            Dating YouTube
+          </a>
+          <a
+            href={site.youtubeGeneral}
+            className="hover:text-gold"
+            target="_blank"
+            rel="noreferrer"
+          >
+            General YouTube
           </a>
           <a
             href={site.instagram}
@@ -47,7 +52,10 @@ export function Footer() {
             Instagram
           </a>
           <Link href="/inquire" className="hover:text-gold">
-            Inquiries
+            Product inquiries
+          </Link>
+          <Link href="/disclosure" className="hover:text-gold">
+            Affiliate disclosure
           </Link>
         </div>
       </div>

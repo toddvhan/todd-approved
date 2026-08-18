@@ -1,12 +1,19 @@
 "use client";
 
-import { useActionState } from "react";
-import { submitInquiry, type InquiryState } from "./actions";
+import { useActionState, useId } from "react";
+import { submitInquiry, type InquiryState } from "@/app/inquire/actions";
 
 const fieldClass =
   "mt-2 w-full border border-line bg-ink px-4 py-3 text-ivory outline-none transition-colors focus:border-gold";
 
-export function InquiryForm({ watch }: { watch?: string }) {
+export function InquiryForm({
+  watch,
+  compact = false,
+}: {
+  watch?: string;
+  compact?: boolean;
+}) {
+  const trapId = useId();
   const [state, action, pending] = useActionState<InquiryState | null, FormData>(
     submitInquiry,
     null,
@@ -26,16 +33,15 @@ export function InquiryForm({ watch }: { watch?: string }) {
         <>
           <input type="hidden" name="watch" value={watch} />
           <p className="text-sm text-ivory-dim">
-            About{" "}
-            <span className="text-ivory">{watch}</span>
+            About <span className="text-ivory">{watch}</span>
           </p>
         </>
       ) : null}
 
       <div className="absolute left-[-10000px]" aria-hidden="true">
-        <label htmlFor="company">Company</label>
+        <label htmlFor={trapId}>Company</label>
         <input
-          id="company"
+          id={trapId}
           name="company"
           tabIndex={-1}
           autoComplete="off"
@@ -76,7 +82,7 @@ export function InquiryForm({ watch }: { watch?: string }) {
           Message
         </span>
         <textarea
-          className={`${fieldClass} min-h-36 resize-y`}
+          className={`${fieldClass} resize-y ${compact ? "min-h-28" : "min-h-36"}`}
           name="message"
           required
           minLength={10}
