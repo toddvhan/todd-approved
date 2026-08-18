@@ -394,7 +394,7 @@ export const catalog: CatalogItem[] = [
     name: "AIRCRAFT Pomade Mousse",
     maker: "R+Co",
     category: "grooming",
-    blurb: "Texture without the grease. The can I actually use.",
+    blurb: "Texture without the grease. The can I actually use when my hair is a bit longer.",
     note: "Associates on Amazon B01695VXTQ.",
     image: "/products/rco-aircraft.jpg",
     imageAlt: "R+Co AIRCRAFT Pomade Mousse can",
