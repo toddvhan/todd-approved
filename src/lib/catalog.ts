@@ -706,6 +706,15 @@ export const catalog: CatalogItem[] = [
     isbn: "0452011871",
   }),
   book({
+    slug: "stranger-in-a-strange-land",
+    name: "Stranger in a Strange Land",
+    maker: "Robert A. Heinlein",
+    blurb:
+      "A human raised by Martians comes to Earth. Belonging, sex, churches, and grokking. The one people still fight over.",
+    isbn: "0441788386",
+    note: "Ace uncut edition, ISBN 0441788386. Not the 1961 cut text. Associates on the Amazon URL.",
+  }),
+  book({
     slug: "the-hustler",
     name: "The Hustler",
     maker: "Walter Tevis",
