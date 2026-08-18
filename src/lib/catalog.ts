@@ -627,6 +627,15 @@ export const catalog: CatalogItem[] = [
     isbn: "1612680194",
   }),
   book({
+    slug: "profit-first",
+    name: "Profit First",
+    maker: "Mike Michalowicz",
+    blurb:
+      "Take profit first. What's left is what you get to spend. A cash system, not a pep talk.",
+    isbn: "073521414X",
+    note: "Portfolio edition, ISBN 073521414X. Associates on the Amazon URL.",
+  }),
+  book({
     slug: "the-warren-buffett-way",
     name: "The Warren Buffett Way",
     maker: "Robert Hagstrom",
