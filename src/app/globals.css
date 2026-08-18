@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #0c0b09;
+  --ink-2: #141210;
+  --panel: #171512;
+  --line: #2c2822;
+  --ivory: #f1e6d4;
+  --ivory-dim: #c9bba6;
+  --mute: #8b8173;
+  --gold: #c6a572;
+  --gold-dim: #9a7d4f;
+  --sold: #6f685e;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-panel: var(--panel);
+  --color-line: var(--line);
+  --color-ivory: var(--ivory);
+  --color-ivory-dim: var(--ivory-dim);
+  --color-mute: var(--mute);
+  --color-gold: var(--gold);
+  --color-gold-dim: var(--gold-dim);
+  --color-sold: var(--sold);
+  --font-sans: var(--font-outfit);
+  --font-serif: var(--font-cormorant);
+}
+
+* {
+  border-color: var(--line);
+}
+
+html {
+  background: var(--ink);
+  color: var(--ivory);
+}
+
+body {
+  background: var(--ink);
+  color: var(--ivory);
+  font-family: var(--font-outfit), system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+a {
+  text-underline-offset: 0.22em;
+}
+
+.rule {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--gold-dim) 18%,
+    var(--gold) 50%,
+    var(--gold-dim) 82%,
+    transparent
+  );
+  opacity: 0.7;
+}
