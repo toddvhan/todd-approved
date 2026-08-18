@@ -75,7 +75,7 @@ const nextConfig: NextConfig = {
     ],
   },
   async redirects() {
-    const canonical = `https://${site.domain}/:path*`;
+    const canonical = `https://${site.canonicalHost}/:path*`;
     return [
       {
         source: "/:path*",
@@ -86,12 +86,6 @@ const nextConfig: NextConfig = {
       {
         source: "/:path*",
         has: [{ type: "host", value: `www.${site.redirectDomain}` }],
-        destination: canonical,
-        permanent: true,
-      },
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: `www.${site.domain}` }],
         destination: canonical,
         permanent: true,
       },

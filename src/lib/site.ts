@@ -5,8 +5,10 @@ export const site = {
   description:
     "A curated list of clothes, books, watches, and resources Todd V uses and recommends — not branded merch.",
   // Canonical site is toddapproved.com (no V in the URL).
-  // toddvapproved.com 301s here. Keep both on GoDaddy; do not transfer.
+  // Vercel serves production on www.toddapproved.com and 308s the apex there.
+  // toddvapproved.com 301s to www.toddapproved.com. Keep both on GoDaddy; do not transfer.
   domain: "toddapproved.com",
+  canonicalHost: "www.toddapproved.com",
   redirectDomain: "toddvapproved.com",
   // Amazon Associates tracking ID (Associates Central).
   amazonTag: "toddvdating-20",
