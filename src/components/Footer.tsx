@@ -22,9 +22,8 @@ export function Footer() {
             here — so this store cannot touch my other merchant accounts.
           </p>
           <p className="mt-3 text-sm leading-6 text-mute">
-            Supplements are what I take, not medical advice. Hims is a
-            telehealth service — a licensed provider decides if treatment is
-            appropriate. Individual results vary.
+            Supplements are what I take, not medical advice. Individual results
+            vary.
           </p>
         </div>
         <div className="flex flex-col gap-3 text-sm tracking-[0.12em] text-ivory-dim uppercase">

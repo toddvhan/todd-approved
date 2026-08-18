@@ -16,9 +16,6 @@ export const site = {
   contactEmail: "inquiries@toddapproved.com",
   instagram: "https://instagram.com/toddvalentineofficial",
   youtube: "https://www.youtube.com/RSDTodd",
-  // Paste the Impact / creator Hims link here when you have it. Personal
-  // refer-a-friend codes are often not allowed on public sites.
-  himsReferralUrl: "",
   // Paste the LMNT creator landing page (drinklmnt.com/your-name) here.
   // Salty Status is a customer referral (free box), not a commission program.
   lmntReferralUrl: "",
@@ -45,10 +42,6 @@ export const nav = [
   { href: "/dads", label: "For Dads" },
   { href: "/brain-games", label: "Brain Games" },
 ] as const;
-
-export function himsHref() {
-  return site.himsReferralUrl || "https://www.hims.com/sexual-health";
-}
 
 export function lmntHref() {
   return (

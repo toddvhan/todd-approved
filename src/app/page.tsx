@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ProductCard } from "@/components/ProductCard";
 import { featuredItems } from "@/lib/catalog";
@@ -9,50 +10,65 @@ export default function Home() {
   return (
     <>
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-8 md:px-8 md:pt-24">
-        <p className="text-[11px] tracking-[0.36em] text-gold uppercase">
-          A private list, made public
-        </p>
-        <h1 className="mt-4 max-w-3xl font-serif text-5xl leading-[1.05] text-ivory md:text-7xl">
-          Not merch.
-          <br />
-          What I actually use.
-        </h1>
-        <p className="mt-7 max-w-xl text-lg leading-8 text-ivory-dim">
-          I&apos;m Todd V. {site.tagline} Clothes I wear. Books I tell men to
-          read. Watches I will sell you if you want one. If I would not put my
-          name on it, it is not on this site.
-        </p>
-        <div className="mt-10 flex flex-wrap gap-4">
-          <Link
-            href="/books"
-            className="border border-gold bg-gold px-5 py-3 text-[12px] tracking-[0.22em] text-ink uppercase transition-colors hover:bg-transparent hover:text-gold"
-          >
-            The books
-          </Link>
-          <Link
-            href="/clothes"
-            className="border border-line px-5 py-3 text-[12px] tracking-[0.22em] text-ivory uppercase transition-colors hover:border-gold hover:text-gold"
-          >
-            Clothes
-          </Link>
-          <Link
-            href="/watches"
-            className="border border-line px-5 py-3 text-[12px] tracking-[0.22em] text-ivory uppercase transition-colors hover:border-gold hover:text-gold"
-          >
-            Watches
-          </Link>
-          <Link
-            href="/dads"
-            className="border border-line px-5 py-3 text-[12px] tracking-[0.22em] text-ivory uppercase transition-colors hover:border-gold hover:text-gold"
-          >
-            For Dads
-          </Link>
-          <Link
-            href="/brain-games"
-            className="border border-line px-5 py-3 text-[12px] tracking-[0.22em] text-ivory uppercase transition-colors hover:border-gold hover:text-gold"
-          >
-            Brain Games
-          </Link>
+        <div className="flex items-start gap-6 sm:gap-10 md:gap-16">
+          <div className="min-w-0 flex-1">
+            <p className="text-[11px] tracking-[0.36em] text-gold uppercase">
+              A private list, made public
+            </p>
+            <h1 className="mt-4 max-w-3xl font-serif text-5xl leading-[1.05] text-ivory md:text-7xl">
+              Not merch.
+              <br />
+              What I actually use.
+            </h1>
+            <p className="mt-7 max-w-xl text-lg leading-8 text-ivory-dim">
+              I&apos;m Todd V. {site.tagline} Clothes I wear. Books I tell men to
+              read. Watches I will sell you if you want one. If I would not put my
+              name on it, it is not on this site.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Link
+                href="/books"
+                className="border border-gold bg-gold px-5 py-3 text-[12px] tracking-[0.22em] text-ink uppercase transition-colors hover:bg-transparent hover:text-gold"
+              >
+                The books
+              </Link>
+              <Link
+                href="/clothes"
+                className="border border-line px-5 py-3 text-[12px] tracking-[0.22em] text-ivory uppercase transition-colors hover:border-gold hover:text-gold"
+              >
+                Clothes
+              </Link>
+              <Link
+                href="/watches"
+                className="border border-line px-5 py-3 text-[12px] tracking-[0.22em] text-ivory uppercase transition-colors hover:border-gold hover:text-gold"
+              >
+                Watches
+              </Link>
+              <Link
+                href="/dads"
+                className="border border-line px-5 py-3 text-[12px] tracking-[0.22em] text-ivory uppercase transition-colors hover:border-gold hover:text-gold"
+              >
+                For Dads
+              </Link>
+              <Link
+                href="/brain-games"
+                className="border border-line px-5 py-3 text-[12px] tracking-[0.22em] text-ivory uppercase transition-colors hover:border-gold hover:text-gold"
+              >
+                Brain Games
+              </Link>
+            </div>
+          </div>
+          <div className="relative aspect-[4/5] w-28 shrink-0 overflow-hidden border border-gold/40 sm:w-44 md:w-56 lg:w-72">
+            <div className="pointer-events-none absolute inset-2 z-10 border border-gold/25" />
+            <Image
+              src="/todd-v.jpg"
+              alt="Todd V"
+              fill
+              priority
+              sizes="(min-width: 1024px) 288px, (min-width: 768px) 224px, (min-width: 640px) 176px, 112px"
+              className="object-cover object-[center_18%]"
+            />
+          </div>
         </div>
       </section>
 

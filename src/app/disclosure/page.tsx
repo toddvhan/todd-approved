@@ -35,11 +35,6 @@ export default function DisclosurePage() {
           doctor before you take a supplement.
         </p>
         <p>
-          Hims is a telehealth service. If you use that link, I may earn a
-          commission. A licensed provider still has to decide if treatment is
-          appropriate. A prescription is not a guarantee of performance.
-        </p>
-        <p>
           Studio (studio.com/todd) and 1% Dating (onepercent.dating) are my
           programs. Digital Black Belt now lives there. If you sign up, that is
           my business — not a third-party affiliate commission on someone

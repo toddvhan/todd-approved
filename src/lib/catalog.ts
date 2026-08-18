@@ -1,7 +1,6 @@
 import {
   chessableHref,
   fproHref,
-  himsHref,
   pokerSnowieHref,
   whoopHref,
 } from "./site";
@@ -83,9 +82,7 @@ export const categoryCopy: Record<
     title: "Resources",
     kicker: "Gym, kit, and the rest",
     intro:
-      "Two apps that are mine: Studio, and 1% Dating. Then how I train and stay powered — ClassPass, Freeletics, WHOOP for BJJ (sleeve and boxers — not the wrist on the mats). Chessable for chess. PokerSnowie for no-limit. FPRO for soccer. PlugBug. The Tascam for voice. Hims, and SKYN Elite — for the men who need it, and for the men who just want to be extra sure they perform.",
-    disclaimer:
-      "Hims is a telehealth service, not a guarantee. A licensed provider decides if treatment is appropriate. This is not medical advice.",
+      "Two apps that are mine: Studio, and 1% Dating. Then how I train and stay powered — ClassPass, Freeletics, WHOOP for BJJ (sleeve and boxers — not the wrist on the mats). Chessable for chess. PokerSnowie for no-limit. FPRO for soccer. PlugBug. The Tascam for voice. SKYN Elite.",
   },
   dads: {
     title: "For Dads",
@@ -969,20 +966,6 @@ export const catalog: CatalogItem[] = [
     href: "https://onepercent.dating",
     retailer: "1%",
     owned: true,
-  },
-  {
-    slug: "hims",
-    name: "Sexual health",
-    maker: "Hims",
-    category: "resources",
-    blurb:
-      "For the men who need it. And for the men who just want to be extra sure they perform. Online consult, licensed provider, prescription if they think you should have one.",
-    note: "Commercial affiliate is Impact / FlexOffers — paste that tracked URL into site.himsReferralUrl. Personal refer-a-friend codes are typically not allowed on public sites. Hub is hims.com/sexual-health, not hair.",
-    image: "/products/hims-sexual-health.jpg",
-    imageAlt: "Hims wordmark",
-    imageContain: true,
-    href: himsHref(),
-    retailer: "Hims",
   },
   {
     slug: "skyn-elite",

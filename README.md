@@ -25,8 +25,7 @@ Every product lives in one file: `src/lib/catalog.ts`.
 3. Put your tag in `src/lib/site.ts` → `amazonTag`.
 4. Set `contactEmail` in the same file (watch inquiries use it).
 5. For a watch listed on Chrono24 or eBay, add `marketplaceUrl` and `marketplaceName`.
-6. Paste the Hims Impact / creator URL into `src/lib/site.ts` → `himsReferralUrl`. Until then the card still goes to hims.com/sexual-health.
-7. Studio (`studio.com/todd`) and 1% Dating (`onepercent.dating`) are first-party — his apps, not third-party affiliates. Digital Black Belt merged into 1%.
+6. Studio (`studio.com/todd`) and 1% Dating (`onepercent.dating`) are first-party — his apps, not third-party affiliates. Digital Black Belt merged into 1%.
 
 Watch statuses: `available`, `hold`, `sold`.
 
@@ -58,7 +57,6 @@ You do not have to invent a partnership. These brands already run programs. Appl
 | **Supplements** | Amazon Associates | Generic bottle photos (BCAAs, CoQ10, bromelain, DIM, maca, horny goat weed) until cabinet brands are pinned. LMNT and Gold BJJ PostRoll use their own product shots. |
 | **Gold BJJ PostRoll** | Amazon Associates (`B07YQ76ZF9`) / Gold BJJ affiliate if they approve you | Post-workout drink after BJJ or CrossFit. Brand page is live; swap for a tracked link. |
 | **LMNT** | Creator landing page (`lmntReferralUrl`) or Amazon Associates (`B09Q9WCDY7`) | Electrolytes / hydration. Variety pack until flavor is pinned. Salty Status is a free-box referral, not a commission. |
-| **Hims** | Impact / FlexOffers | Sexual health. Paste the tracked URL into `himsReferralUrl`. Do not put a personal refer-a-friend code on this site. Hub: hims.com/sexual-health (not hair). |
 | **SKYN Elite** | Amazon Associates (`B0735Q681B`) | Latex-free Elite condoms, 36-count. Not Original, Extra Lube, or Large unless that is the box. |
 | **ClassPass** | [classpass.com/try/affiliate-program](https://classpass.com/try/affiliate-program) | Impact. Gyms/classes while traveling. |
 | **Freeletics** | Awin, or their partner form | Bodyweight coach when there is no gym. Link the website, not the App Store. |
