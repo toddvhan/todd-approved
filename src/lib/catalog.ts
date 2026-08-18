@@ -662,6 +662,15 @@ export const catalog: CatalogItem[] = [
     isbn: "0393324818",
   }),
   book({
+    slug: "the-undoing-project",
+    name: "The Undoing Project",
+    maker: "Michael Lewis",
+    blurb:
+      "Kahneman and Tversky. Why your gut is systematically wrong — and why that friendship changed how we think.",
+    isbn: "0393354776",
+    note: "Norton paperback, ISBN 0393354776. Same Lewis as Moneyball. Associates on the Amazon URL.",
+  }),
+  book({
     slug: "the-ascent-of-money",
     name: "The Ascent of Money",
     maker: "Niall Ferguson",
