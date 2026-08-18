@@ -14,8 +14,8 @@ export const site = {
   amazonTag: "toddvdating-20",
   // Used for watch inquiries only. This site does not take payment.
   contactEmail: "inquiries@toddapproved.com",
-  instagram: "https://instagram.com/toddvalentineofficial",
-  youtube: "https://www.youtube.com/RSDTodd",
+  instagram: "https://www.instagram.com/toddvdating",
+  youtube: "https://www.youtube.com/@ToddVDating",
   // Paste the LMNT creator landing page (drinklmnt.com/your-name) here.
   // Salty Status is a customer referral (free box), not a commission program.
   lmntReferralUrl: "",
