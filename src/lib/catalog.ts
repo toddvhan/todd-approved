@@ -50,7 +50,7 @@ export const categoryCopy: Record<
     title: "Clothes",
     kicker: "What I actually wear",
     intro:
-      "A small rotation, including pieces that may already be gone from stores. Black tee, the reversed narcissist tee, rag & bone henley and FRAME long-sleeve, jeans, joggers, Flux, Ted Baker, Lunargrand boots, the gi, the tape, the wallet. If a SKU is dead, the link is a search — not a scavenger hunt dressed up as a product page.",
+      "A small rotation, including pieces that may already be gone from stores. Black tee, the reversed narcissist tee, rag & bone henley, FRAME long-sleeve, Joe's waffle tee, jeans, joggers, Flux, Ted Baker, Lunargrand boots, the gi, the tape, the wallet. If a SKU is dead, the link is a search — not a scavenger hunt dressed up as a product page.",
   },
   grooming: {
     title: "Grooming",
@@ -238,6 +238,20 @@ export const catalog: CatalogItem[] = [
     imageAlt: "FRAME Duo Fold Long Sleeve Crew in noir, crew neck",
     imageContain: true,
     href: amazonDp("B08RP92XJ1"),
+    retailer: "Amazon",
+  },
+  {
+    slug: "joes-ls-waffle-tee-black",
+    name: "Long sleeve waffle tee, black",
+    maker: "Joe's Jeans",
+    category: "clothes",
+    blurb:
+      "Black waffle long-sleeve. Crew, 100% cotton. The texture layer.",
+    note: "Joe's Long Sleeve Waffle Tee, Black, style JMFAWT7809. Thumbnail is the official joesjeans.com packshot. Amazon B0F4HYCBBN is the same SKU. Associates on the Amazon URL.",
+    image: "/products/joes-ls-waffle-tee-black.jpg",
+    imageAlt: "Joe's Jeans black long-sleeve waffle tee, crew neck",
+    imageContain: true,
+    href: amazonDp("B0F4HYCBBN"),
     retailer: "Amazon",
   },
   {
