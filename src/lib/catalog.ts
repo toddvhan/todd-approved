@@ -652,6 +652,15 @@ export const catalog: CatalogItem[] = [
     isbn: "148264326X",
   }),
   book({
+    slug: "i-cant-accept-not-trying",
+    name: "I Can't Accept Not Trying",
+    maker: "Michael Jordan",
+    blurb:
+      "Short. No philosophy fog. You either go for it or you don't — and he couldn't live with don't.",
+    isbn: "0062511904",
+    note: "HarperSanFrancisco 1994 hardcover. Subtitle: Michael Jordan on the Pursuit of Excellence. ISBN 0062511904. Associates on the Amazon URL.",
+  }),
+  book({
     slug: "rich-dad-poor-dad",
     name: "Rich Dad Poor Dad",
     maker: "Robert Kiyosaki",
