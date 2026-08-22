@@ -765,6 +765,24 @@ export const catalog: CatalogItem[] = [
     note: "Ace uncut edition, ISBN 0441788386. Not the 1961 cut text. Associates on the Amazon URL.",
   }),
   book({
+    slug: "brave-new-world",
+    name: "Brave New World",
+    maker: "Aldous Huxley",
+    blurb:
+      "Control by pleasure, not the boot. Soma, caste, and a world that never has to say no because nobody wants to.",
+    isbn: "0060850523",
+    note: "Harper Perennial Modern Classics paperback, ISBN 0060850523. Associates on the Amazon URL.",
+  }),
+  book({
+    slug: "1984",
+    name: "1984",
+    maker: "George Orwell",
+    blurb:
+      "The boot. Thoughtcrime, Newspeak, and a Party that does not need you happy — only obedient. Everyone quotes it. Read it.",
+    isbn: "0451524934",
+    note: "Signet Classics paperback, ISBN 0451524934. Associates on the Amazon URL.",
+  }),
+  book({
     slug: "catch-me-if-you-can",
     name: "Catch Me If You Can",
     maker: "Frank W. Abagnale",
