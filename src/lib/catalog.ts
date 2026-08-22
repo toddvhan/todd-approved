@@ -70,7 +70,7 @@ export const categoryCopy: Record<
     title: "Books",
     kicker: "The shelf",
     intro:
-      "Not a reading list I copied. These are the ones that stuck — learning, money, persuasion, fiction, the body, chess, limit hold 'em, pool, stress, the long game.",
+      "Not a reading list I copied. These are the ones that stuck — learning, money, persuasion, fiction, the body, chess, limit hold 'em, pool, Monopoly, stress, the long game.",
   },
   watches: {
     title: "Watches",
@@ -845,6 +845,15 @@ export const catalog: CatalogItem[] = [
     isbn: "0812922417",
     image: amazonImage("0812922417"),
     note: "Random House revised edition, 1993. ISBN 0812922417. Ray “Cool Cat” Martin with Rosser Reeves. Not Byrne’s Standard Book of Pool unless that is the copy on the shelf.",
+  }),
+  book({
+    slug: "1000-ways-to-win-monopoly-games",
+    name: "1000 Ways to Win Monopoly Games",
+    maker: "Jay Walker & Jeff Lehman",
+    blurb:
+      "Monopoly as a thinking game. Trading, timing, and why most people play it wrong.",
+    isbn: "0440048125",
+    note: "Dell paperback, 1975. ISBN 0440048125. Walker and Lehman. Out of print — Amazon is used copies. Associates on the Amazon URL.",
   }),
   {
     slug: "rolex-air-king-116900",

@@ -28,8 +28,8 @@ export default function ReadingPage() {
         </h1>
         <p className="mt-5 max-w-2xl text-base leading-7 text-ivory-dim">
           Not merch. The books that stuck — learning, money, persuasion,
-          fiction, the body, chess, limit hold &apos;em, pool. If I would not
-          put my name on it, it is not here.
+          fiction, the body, chess, limit hold &apos;em, pool, Monopoly. If I
+          would not put my name on it, it is not here.
         </p>
       </header>
 
