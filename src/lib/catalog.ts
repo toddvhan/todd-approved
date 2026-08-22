@@ -565,6 +565,24 @@ export const catalog: CatalogItem[] = [
     featured: true,
   }),
   book({
+    slug: "how-i-found-freedom-in-an-unfree-world",
+    name: "How I Found Freedom in an Unfree World",
+    maker: "Harry Browne",
+    blurb:
+      "Stop waiting for the world to free you. Cut the traps. Personal liberty without the manifesto fog.",
+    isbn: "0965603679",
+    note: "Liam Works 25th anniversary edition, ISBN 0965603679. Not the 1974 Avon mass-market unless that is the copy on the shelf. Associates on the Amazon URL.",
+  }),
+  book({
+    slug: "winning-through-intimidation",
+    name: "Winning Through Intimidation",
+    maker: "Robert J. Ringer",
+    blurb:
+      "The deal is not fair. This is the map of how intimidation actually works — not a license to be a jerk.",
+    isbn: "0449207862",
+    note: "Fawcett Crest paperback, ISBN 0449207862. Associates on the Amazon URL.",
+  }),
+  book({
     slug: "the-power-of-now",
     name: "The Power of Now",
     maker: "Eckhart Tolle",
