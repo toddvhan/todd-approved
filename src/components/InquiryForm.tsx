@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState, useId } from "react";
-import { submitInquiry, type InquiryState } from "@/app/inquire/actions";
+import { submitInquiry, type InquiryState } from "@/app/(site)/inquire/actions";
 
 const fieldClass =
   "mt-2 w-full border border-line bg-ink px-4 py-3 text-ivory outline-none transition-colors focus:border-gold";
