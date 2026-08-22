@@ -41,16 +41,18 @@ export default function ReadingPage() {
 
       <section className="mx-auto max-w-6xl px-6 pb-16 md:px-8">
         <div className="rule mb-12" />
-        <p className="mt-5 max-w-2xl text-base leading-7 text-ivory-dim">
-          If you&apos;re interested in my recommendations for clothing,
-          grooming, travel, etc. — click below.
-        </p>
-        <Link
-          href="/"
-          className="mt-8 inline-block border border-gold bg-gold px-5 py-3 text-[12px] tracking-[0.22em] text-ink uppercase transition-colors hover:bg-transparent hover:text-gold"
-        >
-          More recommendations
-        </Link>
+        <div className="border border-gold/50 bg-panel px-6 py-10 md:px-10 md:py-12">
+          <p className="max-w-3xl font-serif text-2xl leading-snug text-ivory md:text-4xl md:leading-[1.2]">
+            If you&apos;re interested in my recommendations for clothing,
+            grooming, travel, etc. — click below.
+          </p>
+          <Link
+            href="/"
+            className="mt-8 inline-block border border-gold bg-gold px-6 py-3.5 text-[12px] tracking-[0.22em] text-ink uppercase transition-colors hover:bg-transparent hover:text-gold"
+          >
+            More recommendations
+          </Link>
+        </div>
       </section>
 
       <p className="mx-auto max-w-6xl px-6 pb-12 text-sm leading-6 text-mute md:px-8">
